@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-jute: #d4a574;
+  --color-dark-brown: #4a3728;
+  --color-light-beige: #f5ede0;
+  --color-wheat: #8b6f47;
+  --color-sage: #8a9b7e;
+  --color-cream: #faf7f3;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark-brown);
+}
+
+.jute-texture {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(74, 55, 40, 0.03) 2px,
+      rgba(74, 55, 40, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(74, 55, 40, 0.03) 2px,
+      rgba(74, 55, 40, 0.03) 4px
+    );
+}
+
+.organic-badge {
+  @apply inline-block px-4 py-2 rounded-full text-sm font-semibold;
+  background-color: var(--color-jute);
+  color: white;
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.2);
+}
+
+.btn-primary {
+  @apply px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105;
+  background-color: var(--color-wheat);
+  color: white;
+  box-shadow: 0 6px 20px rgba(139, 111, 71, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark-brown);
+}
+
+.btn-secondary {
+  @apply px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105;
+  background-color: white;
+  color: var(--color-wheat);
+  border: 2px solid var(--color-jute);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-light-beige);
+}
+
+.card-organic {
+  @apply rounded-2xl p-6 transition-all hover:shadow-xl;
+  background-color: var(--color-light-beige);
+  box-shadow: 0 4px 15px rgba(74, 55, 40, 0.08);
+}
