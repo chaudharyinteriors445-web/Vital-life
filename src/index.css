@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* @formatter:off */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @formatter:on */
 
 :root {
   --color-jute: #d4a574;
@@ -46,14 +48,18 @@ body {
 }
 
 .organic-badge {
+  /* @formatter:off */
   @apply inline-block px-4 py-2 rounded-full text-sm font-semibold;
+  /* @formatter:on */
   background-color: var(--color-jute);
   color: white;
   box-shadow: 0 4px 15px rgba(212, 165, 116, 0.2);
 }
 
 .btn-primary {
+  /* @formatter:off */
   @apply px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105;
+  /* @formatter:on */
   background-color: var(--color-wheat);
   color: white;
   box-shadow: 0 6px 20px rgba(139, 111, 71, 0.2);
@@ -64,7 +70,9 @@ body {
 }
 
 .btn-secondary {
+  /* @formatter:off */
   @apply px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105;
+  /* @formatter:on */
   background-color: white;
   color: var(--color-wheat);
   border: 2px solid var(--color-jute);
@@ -75,7 +83,9 @@ body {
 }
 
 .card-organic {
+  /* @formatter:off */
   @apply rounded-2xl p-6 transition-all hover:shadow-xl;
+  /* @formatter:on */
   background-color: var(--color-light-beige);
   box-shadow: 0 4px 15px rgba(74, 55, 40, 0.08);
 }
