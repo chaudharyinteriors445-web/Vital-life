@@ -2,7 +2,7 @@ import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919876543210?text=Hello! I am interested in VitalLife Organic Khapli Atta', '_blank');
+    window.open('https://wa.me/+919759101876?text=Hello! I am interested in VitalLife Organic Khapli Atta', '_blank');
   };
 
   return (
